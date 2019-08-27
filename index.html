@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+window.addEventListener('message', function(evt) {
+  if (evt.data.type === 'eval') {
+    eval(evt.data.code);
+  }
+});
+</script>
+</body>
+</html>
